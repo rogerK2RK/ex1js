@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Exe 1 JS TODOLIST</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <label for="filtre-select">Filtre</label>
+            <select name="filtre" id="filtre-select" >
+                <option value="Default">Default</option>
+                <option value="Alphabet">Alphabet</option>
+                <option value="Proprieter">Proprieter</option>
+            </select>
+        </div>
+    </div>
+    
+
+    <section id="todolist">
+        <h2>Ma liste de Tâches</h2>
+        <ul></ul>
+    </section>
+
+    <form action="">
+        <fieldset id="commentFS">
+            <legend>Ajouter une Tâche</legend>
+            <label for="tache-name">Tâche : <input type="text" name="tache_name" id="tache-name" required></label>
+            
+            <label for="proproete-select" class="proprieter">Priorité : </label>
+            <select name="priorite" id="proproete-select" required>
+                <option value="1">Haut</option>
+                <option value="2">Normal</option>
+                <option value="3">Bass</option>
+            </select>
+            <button  type="submit" class="btn btn-add">Ajouter</button>
+        </fieldset>
+    </form>
+    <button id="del-tache" class="btn btn-del">Supprimer</button>
+    <script src="js/main.js"></script>
+</body>
+</html>
